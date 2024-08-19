@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  </head>
+  <body>
+    <div class="toast">
+      <div class="toast_header">
+        <span class="toast_header__icon"></span>
+        <span class="toast_header__title">Message Sent!</span>
+      </div>
+      <p class="toast_desc">
+        Thanks for completing the form. We'll be in touch soon!
+      </p>
+    </div>
+    <div class="form-container">
+      <form>
+        <h3>Contact Us</h3>
+        <div class="firstAndLastName">
+          <div class="inputAndLabelContainer">
+            <label for="firstName">First Name <span>*</span></label>
+            <input type="text" id="firstName" />
+            <p id="firstName_error"></p>
+          </div>
+          <div class="inputAndLabelContainer">
+            <label for="lastName">Last Name <span>*</span></label>
+            <input type="text" id="lastName" />
+            <p id="lastName_error"></p>
+          </div>
+  
+        </div>
+
+        <div class="inputAndLabelContainer">
+          <label for="emailAddress">Email Address <span>*</span></label>
+          <input type="text" id="emailAddress" />
+          <p id="email_error"></p>
+        </div>
+
+        <div class="inputAndLabelContainer">
+          <label> Query Type <span>*</span></label>
+          <div class="radios-container">
+            <div class="radio">
+              <input
+                type="radio"
+                id="general-enquiry"
+                value="General Enquiry"
+                name="radioAnswer"
+              />
+              <label for="general-enquiry"> General Enquiry</label>
+            </div>
+            <div class="radio">
+              <input
+                type="radio"
+                id="support-request"
+                value="Support Request"
+                name="radioAnswer"
+              />
+              <label for="support-request"> Support Request</label>
+            </div>
+            <p id="query_error"></p>
+          </div>
+        </div>
+        
+        <div class="inputAndLabelContainer">
+          <label for="message">Message <span>*</span></label>
+          <textarea name="" id="messageBox" cols="30" rows="10"></textarea>
+          <p id="message_error"></p>
+        </div>
+        <div class="conditionCheckContainer">
+          <div>
+            <input
+              class="conditionCheckInput"
+              type="checkbox"
+              id="conditionCheck"
+              name="conditionCheck"
+              value="Bike"
+            />
+            <label class="conditionCheckText" for="conditionCheck">
+              I consent to being contacted by the team <span>*</span>
+            </label>
+          </div>
+          <p id="checkbox_error"></p>
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+      <script src="./assets/script/script.js"></script>
+    </div>
+    <!-- Contact Us
+
+  First Name
+  This field is required
+
+  Last Name
+  This field is required
+
+  Email Address
+  Please enter a valid email address
+  This field is required
+
+  Query Type
+  General Enquiry
+  Support Request
+  Please select a query type
+
+  Message
+  This field is required
+
+  I consent to being contacted by the team
+  To submit this form, please consent to being contacted
+
+  Submit
+
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon! -->
+  </body>
+</html>
